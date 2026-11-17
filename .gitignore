@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Downloaded data and generated artifacts
+data/raw/
+data/custom_samples/images/
+data/custom_samples/processed/
+data/custom_samples/samples.jsonl
+experiments/results/*
+!experiments/results/.gitkeep
+experiments/logs/*
+!experiments/logs/.gitkeep
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+
+# Local configuration
+.streamlit/secrets.toml
+.DS_Store

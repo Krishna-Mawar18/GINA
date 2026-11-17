@@ -18,6 +18,8 @@ experiments/logs/*
 !experiments/logs/.gitkeep
 models/checkpoints/*
 !models/checkpoints/.gitkeep
+# Ship the trained baseline so Streamlit Cloud can run recognition out of the box.
+!models/checkpoints/best.pt
 
 # Local configuration
 .streamlit/secrets.toml

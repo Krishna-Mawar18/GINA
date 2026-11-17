@@ -233,6 +233,8 @@ make app
 
 Open the local URL printed by Streamlit (normally `http://localhost:8501`). Recognition is the primary page: draw with the mouse or touch, choose brush/eraser, press **Predict**, and inspect the digit, confidence, top-three classes, probability chart, timings and preprocessing stages. Enable **Real-time prediction** to classify automatically whenever the canvas finishes an update. Approve or correct a prediction to store a sample; the History page lists session predictions and approved samples and can export them.
 
+The same entry point is deployed at `https://gina-krishna.streamlit.app/`. `requirements.txt` uses `opencv-python-headless` so the app works on Linux hosts without system OpenGL libraries, and `models/checkpoints/best.pt` is committed so recognition works immediately after deployment. Streamlit Cloud runs on CPU; CUDA is used automatically only when a local GPU is available.
+
 UI screenshot placeholders (add images under `docs/screenshots/` later):
 
 - `Recognition` — 128×128 canvas, metrics, probability chart.
